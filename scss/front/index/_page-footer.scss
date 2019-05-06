@@ -1,0 +1,95 @@
+@import "../variables";
+
+.page-footer {
+  display: block;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+
+  &__content {
+    display: flex;
+    padding: 32px 0;
+    border-top: 0.5px solid $redesign-index-black-05;
+    border-bottom: 0.5px solid $redesign-index-black-05;
+
+    @media #{$sm} {
+      padding: 30px 0;
+    }
+
+    @media #{$xs} {
+      border-top: 0;
+      padding: 35px 0 27px;
+    }
+  }
+
+  &__bottom {
+    padding: 32.5px 0 40px;
+    display: flex;
+    align-items: flex-end;
+
+    @media #{$xs} {
+      padding: 21.5px 0 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__logo {
+    max-width: 150px;
+
+    @media #{$sm} {
+      max-width: 93px;
+    }
+
+    @media #{$xs} {
+      max-width: 112px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__copyright {
+    margin: 0 0 0 45px;
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 17px;
+    color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+      margin-left: 15px;
+    }
+
+    @media #{$xs} {
+      width: 100%;
+      font-size: 14px;
+      line-height: 17px;
+      margin: 24px 0 0 0;
+      text-align: justify;
+    }
+  }
+
+  &__email {
+    margin-left: auto;
+    color: $redesign-index-orange;
+    display: block;
+    position: relative;
+    padding-left: 24px;
+    font-size: 12px;
+    line-height: 15px;
+    font-family: $GothProB;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 13.14px;
+      height: 10px;
+      background: url('#{$assets-path}/img/footer_mail_orange.svg');
+      background-size: cover;
+    }
+  }
+}
+

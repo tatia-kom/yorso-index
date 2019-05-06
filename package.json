@@ -1,0 +1,20 @@
+{
+  "name": "verstka-yorso",
+  "version": "1.0.0",
+  "private": true,
+  "description": "verstka for B2B food market",
+  "dependencies": {},
+  "devDependencies": {
+    "node-sass": "^4.9.3",
+    "webpack": "^4.20.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ssnikiforov/verstka-yorso.git"
+  },
+  "scripts": {
+    "build": "node-sass --recursive --output ./css/build/ --source-map true --source-map-contents ./scss",
+    "start": "node-sass --watch --recursive --output ./css/build/ --source-map true --source-map-contents ./scss"
+  },
+  "author": "yorso.com"
+}

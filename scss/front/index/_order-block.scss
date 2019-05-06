@@ -1,0 +1,202 @@
+@import "../variables";
+
+.order-block {
+  display: flex;
+  background: $brand-white;
+  position: relative;
+  border-radius: 5px;
+  overflow: hidden;
+
+  @media #{$xs} {
+    flex-direction: column;
+    border-radius: 0;
+  }
+
+  &--vertical_flex {
+    flex-direction: column;
+    justify-content: center;
+    padding: 165px 0;
+
+    @media #{$sm} {
+      padding: 112px;
+    }
+
+    @media #{$xs} {
+      padding: 170px 15px 90px;
+    }
+  }
+
+  &__top-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2001;
+
+    @media #{$sm} {
+      width: 263px;
+    }
+
+    @media #{$xs} {
+      display: none;
+      left: -20px;
+    }
+
+    &--right {
+      left: auto;
+      right: 0;
+    }
+
+    &--mob_visible {
+      @media #{$xs} {
+        display: block!important;
+      }
+    }
+  }
+
+  &__left-side {
+    width: 370px;
+    flex-shrink: 0;
+
+    @media #{$sm} {
+      width: 237px;
+    }
+
+    @media #{$xs} {
+      order: 1;
+      width: 100%;
+    }
+  }
+
+  &__right-side {
+    padding: 39px 39px 41px 40px;
+    position: relative;
+    width: 100%;
+
+    @media #{$sm} {
+      padding: 25px 26px 33px;
+    }
+
+    @media #{$xs} {
+      order: 0;
+      width: 100%;
+      padding: 24px 15px 25px;
+    }
+  }
+
+  &__close {
+    position: absolute;
+    top: 39px;
+    right: 39px;
+    cursor: pointer;
+    z-index: 2002;
+
+    @media #{$sm} {
+      width: 10px;
+      height: 10px;
+      top: 26px;
+      right: 14px;
+    }
+  }
+
+  &__title {
+    margin: 0 0 25px;
+    padding: 0;
+    font-size: 50px;
+    font-family: $GothProB;
+    line-height: 57px;
+    color: $redesign-index-orange;
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 41px;
+      margin-bottom: 15px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__text {
+    color: $redesign-index-black;
+    font-size: 24px;
+    font-family: $GothPro;
+    line-height: 28px;
+    margin-top: 20px;
+
+    @media #{$sm} {
+      font-size: 18px;
+      line-height: 21px;
+      margin-bottom: 0;
+    }
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 23px;
+    }
+
+    &--small {
+      font-size: 14px;
+      font-family: $GothProL;
+      line-height: 20px;
+
+      @media #{$sm} {
+        font-size: 10px;
+        line-height: 12px;
+      }
+
+      @media #{$xs} {
+        font-size: 12px;
+        line-height: 15px;
+      }
+    }
+
+    &--strong {
+      font-family: $GothProB;
+    }
+
+    &--margin_big {
+      margin-top: 35px;
+
+      @media #{$sm} {
+        margin-top: 17px;
+      }
+
+      @media #{$xs} {
+        margin-top: 35px;
+      }
+    }
+
+    &--margin_bottom {
+      @media #{$xs} {
+        margin-bottom: 50px;
+      }
+    }
+
+    &--center {
+      text-align: center;
+    }
+  }
+
+  &__logo {
+    max-width: 141px;
+    position: absolute;
+    left: calc(50% - 70.5px);
+    bottom: 41px;
+
+    @media #{$sm} {
+      width: 95px;
+      left: calc(50% - 47.5px);
+      bottom: 27.3px;
+    }
+
+    @media #{$xs} {
+      display: none;
+    }
+  }
+}

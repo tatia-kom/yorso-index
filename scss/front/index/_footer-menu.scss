@@ -1,0 +1,82 @@
+@import "../variables";
+
+.footer-menu {
+  width: 35%;
+  border-right: 0.5px solid $redesign-index-black-05;
+  display: flex;
+  padding: 15px 0;
+
+  @media #{$sm} {
+    width: 100%;
+    padding: 7px 0;
+  }
+
+  @media #{$xs} {
+    border-right: 0;
+    padding: 0;
+  }
+
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    &:first-child {
+      margin-right: 55px;
+
+      @media #{$xs} {
+        margin-right: 40px;
+      }
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 17px;
+    color: $redesign-index-black;
+    margin-bottom: 35px;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 28px;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
+  &__link-wrap {
+    margin: 7px 0;
+
+    @media #{$xs} {
+      margin: 8px 0;
+    }
+  }
+
+  &__link {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 17px;
+    color: $redesign-index-black;
+    transition: 0.3s;
+
+    &:hover {
+      color: $redesign-index-orange;
+    }
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+}
+

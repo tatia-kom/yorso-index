@@ -1,0 +1,42 @@
+@import "../env_variables";
+
+//fonts
+$OPS-R: OpenSansRegular;
+$OPS-SB: OpenSansSemiBold;
+$OPS-B: OpenSansBold;
+
+$GothPro: GothamPro;
+$GothProB: GothamProBold;
+$GothProM: GothamProMedium;
+$GothProL: GothamProLight;
+
+//colors
+$brand-white: #fff;
+$brand-white-hover: #F4F4F4;
+$brand-white-active: #EEE;
+$brand-black: #0D0D0D;
+$brand-orange: #F77640;
+$brand-orange-hover: #ED5A1C;
+$brand-orange-active: #DB4A0D;
+$brand-gray: #E3E3E3;
+$brand-gray-hover: #D9D9DA;
+$brand-icon-default: #717582;
+$brand-shadow: rgba(0, 0, 0, 0.06);
+$brand-error: #F76A57;
+
+$href-hover-color: #F77640;
+
+
+$redesign-index-body: #F7F7F7;
+$redesign-index-black: #232323;
+$redesign-index-blue: #3D4373;
+$redesign-index-orange: #FF7800;
+$redesign-index-grey: #F0F0F0;
+
+$redesign-index-black-05: rgba(35, 35, 35, 0.5);
+$redesign-index-black-02: rgba(35, 35, 35, 0.2);
+
+//media
+$lg: (max-width: 1239px);
+$sm: (max-width: 991px);
+$xs: (max-width: 767px);

@@ -1,0 +1,379 @@
+@import "../variables";
+
+.order-form {
+  margin-top: 40px;
+
+  @media #{$sm} {
+    margin-top: 10px;
+  }
+
+  &__label {
+    color: $redesign-index-black;
+    font-size: 16px;
+    font-family: $GothProB;
+    line-height: 18px;
+    margin-bottom: 15px;
+    margin-top: 35px;
+
+    @media #{$sm} {
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 16px;
+      margin-top: 17px;
+    }
+  }
+
+  &__goods-wrap {
+    background: $redesign-index-body;
+    border-radius: 5px;
+    padding: 5px 19px;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    margin-bottom: 35px;
+
+    @media #{$sm} {
+      margin-bottom: 0;
+      padding: 3px 13px;
+    }
+    @media #{$xs} {
+      padding: 8px 16px;
+    }
+  }
+
+  &__chosen {
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    background: $redesign-index-orange;
+    padding: 7px 8px 7px 11px;
+    flex-grow: 0;
+    margin: 5px 18px 5px 0;
+
+    @media #{$sm} {
+      margin: 3px 12px 3px 0;
+      padding: 1px 5px 1px 7px;
+      height: 16px;
+    }
+
+    @media #{$xs} {
+      height: 24px;
+      padding: 0 8px;
+      margin-top: 6px;
+    }
+  }
+
+  &__good {
+    color: $brand-white;
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 16px;
+
+    @media #{$sm} {
+      font-size: 9px;
+      line-height: 10px;
+    }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__delete {
+    display: block;
+    cursor: pointer;
+    width: 13px;
+    height: 14px;
+    margin-left: 10px;
+    background: url('#{$assets-path}/img/order_delete.svg') no-repeat center;
+
+    @media #{$sm} {
+      width: 6px;
+      height: 6px;
+      margin-left: 5px;
+    }
+  }
+
+  &__good-input {
+    height: 30px;
+    background: transparent;
+    width: 0;
+    flex-grow: 1;
+    font-size: 16px;
+    font-family: $GothPro;
+    line-height: 18px;
+    color: $redesign-index-black;
+    border: 0;
+    outline: none;
+    margin: 5px 0;
+
+    @media #{$sm} {
+      height: 16px;
+      font-size: 12px;
+      line-height: 14px;
+    }
+
+    @media #{$xs} {
+      height: 24px;
+      font-size: 14px;
+      line-height: 16px;
+      min-width: 50px;
+    }
+  }
+
+  &__dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: $brand-white;
+    box-shadow: 0px 2px 10px rgba(35, 35, 35, 0.15);
+    border-radius: 0px 0px 5px 5px;
+    margin: 0;
+    padding: 0 20px;
+    list-style: none;
+    overflow-y: auto;
+    max-height: 150px;
+    display: none;
+    z-index: 3000;
+
+    @media #{$sm} {
+      padding: 0 15px;
+      max-height: 96px;
+    }
+
+    @media #{$xs} {
+      max-height: 150px;
+      padding: 0 20px;
+    }
+
+    &::-webkit-scrollbar {
+      background: #c4c4c4;
+      border-radius: 5px;
+      width: 7px;
+
+      @media #{$sm} {
+        width: 4px;
+      }
+    }
+
+    &::-webkit-scrollbar-thumb {
+      width: 7px;
+      border-radius: 5px;
+      background: $redesign-index-black;
+
+      @media #{$sm} {
+        width: 4px;
+      }
+    }
+  }
+
+  &__item-dropdown {
+    border-bottom: 1px solid #c4c4c4;
+    font-size: 16px;
+    font-family: $GothPro;
+    line-height: 18px;
+    color: $redesign-index-black;
+    padding: 15px 0;
+    cursor: pointer;
+    transition: 0.3s;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 14px;
+      padding: 8px 0;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 16px;
+      padding: 15px 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+    }
+
+    &:hover {
+      color: $redesign-index-orange;
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+
+    &--vert {
+      @media #{$xs} {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &__side {
+    width: calc(50% - 15px);
+
+    @media #{$xs} {
+      width: calc(50% - 7.5px);
+    }
+
+    &--full {
+      @media #{$xs} {
+        width: 100%;
+      }
+    }
+
+    &--flex {
+      @media #{$xs} {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+  }
+
+  &__mob-side {
+    @media #{$xs} {
+      width: calc(50% - 7.5px);
+      flex-shrink: 0;
+    }
+  }
+
+  &__input {
+    background: $redesign-index-body;
+    border-radius: 5px;
+    padding: 0 30px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: $GothPro;
+    line-height: 16px;
+    height: 50px;
+    color: $redesign-index-black;
+    outline: none;
+
+    @media #{$sm} {
+      font-size: 10px;
+      line-height: 11px;
+      height: 32px;
+      padding: 0 15px;
+    }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 15px;
+      height: 50px;
+      padding: 0 17px;
+    }
+
+    &::placeholder {
+      color: #9D9C9C;
+    }
+    &::-webkit-input-placeholder {
+      color: #9D9C9C;
+    }
+    &::-moz-placeholder {
+      color: #9D9C9C;
+    }
+  }
+
+  &__textarea {
+    background: $redesign-index-body;
+    border-radius: 5px;
+    padding: 0 30px;
+    border: 0;
+    width: 100%;
+    font-size: 14px;
+    font-family: $GothPro;
+    line-height: 16px;
+    height: 170px;
+    color: $redesign-index-black;
+    outline: none;
+    resize: none;
+
+    @media #{$sm} {
+      height: 110px;
+      padding: 0 15px;
+      font-size: 10px;
+      line-height: 11px;
+    }
+
+    @media #{$xs} {
+      font-size: 12px;
+      line-height: 15px;
+      height: 50px;
+    }
+  }
+
+  &__first-checkbox {
+    margin-top: 30px;
+
+    @media #{$sm} {
+      margin-top: 19px;
+    }
+  }
+
+  &__footer {
+    margin-top: 130px;
+    display: flex;
+    justify-content: flex-end;
+
+    @media #{$sm} {
+      margin-top: 78px;
+    }
+
+    @media #{$xs} {
+      margin-top: 33px;
+      justify-content: center;
+    }
+
+    &--small_margin {
+      margin-top: 42px;
+
+      @media #{$sm} {
+        margin-top: 17px;
+      }
+
+      @media #{$xs} {
+        margin-top: 29px;
+      }
+    }
+
+    &--center {
+      justify-content: center;
+    }
+
+    &--space_btwn_mob {
+      @media #{$xs} {
+        justify-content: space-between;
+      }
+    }
+
+  }
+
+  &__back {
+    margin-right: 42px;
+
+    @media #{$sm} {
+      margin-right: 17px;
+    }
+  }
+
+  &__button {
+    @media #{$sm} {
+      width: 80px;
+      height: 40px;
+    }
+
+    @media #{$xs} {
+      width: 130px;
+      height: 60px;
+    }
+  }
+}

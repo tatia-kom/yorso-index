@@ -1,0 +1,35 @@
+@import "../variables";
+
+.navbar-toggle .icon-bar {
+  transition: 0.3s;
+  transform-origin: center;
+  &:nth-child(3) {
+    transition: 0.2s;
+  }
+}
+
+.navbar-toggle {
+  @media #{$xs} {
+    border: none;
+    right: auto;
+    left: 5px;
+    top: 27px;
+    z-index: 50;
+  }
+  &[aria-expanded=true] {
+    .icon-bar {
+      &:nth-child(2) {
+        transform: rotate(45deg) translateY(9px);
+      }
+      &:nth-child(3) {
+        width: 0;
+      }
+      &:nth-child(4) {
+        transform: rotate(-45deg) translateY(-8px);
+      }
+      @media #{$xs} {
+        background: #31365E;
+      }
+    }
+  }
+}

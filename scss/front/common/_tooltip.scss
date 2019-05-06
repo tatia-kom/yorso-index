@@ -1,0 +1,38 @@
+@import "../variables";
+
+.tippy-tooltip.yorso-light-theme {
+  font-size: 15px;
+  font-family: OpenSansRegular, sans-serif;
+  background-color: white;
+  color: black;
+  padding: 20px;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .4);
+  table, td {
+    border: none;
+    text-align: left;
+    padding: 5px;
+  }
+  .credit-value, .credit-currency, .credit-unit {
+    font-weight: bold;
+  }
+  .btn-yellow {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    text-align: center;
+    font-family: OpenSansBold, sans-serif;
+    font-size: 15px;
+    color: $brand-white;
+    background: #FC6526;
+    padding: 10px 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    border: none;
+    outline: none;
+    margin-top: 20px;
+    &:hover {
+      background: $brand-orange-hover;
+      text-decoration: none;
+    }
+  }
+}

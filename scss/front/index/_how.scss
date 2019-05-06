@@ -1,0 +1,274 @@
+@import "../variables";
+
+.how {
+  margin-top: 65px;
+
+  @media #{$sm} {
+    margin-top: 60px;
+  }
+
+  @media #{$xs} {
+    margin-top: 52px;
+  }
+
+  &__slider {
+    @media #{$sm} {
+      width: calc(100% + 46px);
+      transform: translateX(-23px);
+      margin-top: 32px!important;
+
+      .slick-prev {
+        left: -23px;
+      }
+      .slick-next {
+        right: -23px;
+      }
+    }
+
+    @media #{$xs} {
+      padding-bottom: 42px;
+      width: calc(100% + 30px);
+      transform: translateX(-15px);
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px;
+
+    &--with_line {
+      position: relative;
+
+      @media #{$sm} {
+        flex-wrap: wrap;
+        margin-top: 50px;
+      }
+
+      @media #{$xs} {
+        margin-top: 30px;
+        width: calc(100% + 30px);
+        transform: translateX(-15px);
+        padding-bottom: 50px;
+        height: 250px;
+      }
+
+      &:before {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 3px;
+        background: $redesign-index-orange;
+        z-index: 0;
+        top: calc(50% - 1.5px);
+
+        @media #{$sm} {
+          top: 63.5px;
+        }
+
+        @media #{$xs} {
+          display: none;
+        }
+      }
+
+      &:after {
+        @media #{$sm} {
+          position: absolute;
+          display: block;
+          content: '';
+          width: 100%;
+          height: 3px;
+          background: $redesign-index-orange;
+          z-index: 0;
+          top: 241.5px;
+        }
+
+        @media #{$xs} {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &__quarter-item {
+    width: 100%;
+    margin-right: 87px;
+    background: $brand-white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 10px;
+    z-index: 1;
+    border-radius: 5px;
+
+    &:nth-child(3) {
+      @media #{$sm} {
+        margin-top: 48px;
+      }
+
+      @media #{$xs} {
+        margin-top: 0;
+      }
+    }
+
+    &:last-child {
+      margin-right: 0;
+
+      @media #{$sm} {
+        margin-top: 48px;
+        position: relative;
+      }
+
+      &:before {
+        @media #{$sm} {
+          position: absolute;
+          display: block;
+          content: '';
+          height: 48px;
+          width: 3px;
+          background: $redesign-index-orange;
+          z-index: 0;
+          top: -48px;
+        }
+      }
+    }
+
+    @media #{$lg} {
+      margin-right: 60px;
+    }
+
+    @media #{$sm} {
+      margin-right: 0;
+      width: 300px;
+      height: 130px;
+      flex-direction: row;
+      justify-content: center;
+      padding: 0 25px;
+    }
+
+    @media #{$xs} {
+      width: 230px;
+      height: 200px;
+      margin: 0 6.5px;
+      flex-direction: column;
+      align-items: center;
+      display: flex!important;
+    }
+  }
+
+  &__quarter-icon {
+    height: 50px;
+
+    @media #{$sm} {
+      height: 35px;
+    }
+
+    img {
+      @media #{$sm} {
+        max-height: 100%;
+      }
+    }
+
+    @media #{$xs} {
+      height: 50px;
+    }
+  }
+
+  &__quarter-text {
+    margin: 15px 0 0;
+    font-size: 18px;
+    font-family: $GothProL;
+    line-height: 22px;
+    text-align: center;
+    color: $redesign-index-black;
+
+    @media #{$sm} {
+      margin: 0 0 0 25px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media #{$xs} {
+      margin-left: 0;
+      font-size: 18px;
+      line-height: 26px;
+      padding-top: 11px;
+    }
+
+    &--top_padding {
+      padding-top: 11px;
+    }
+  }
+
+  &__third-item {
+    width: 100%;
+    margin-right: 96px;
+    background: $brand-white;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    padding: 46px 0;
+    box-shadow: 0px 1px 4px rgba(35, 35, 35, 0.05);
+    border-radius: 5px;
+    transition: 0.3s;
+    cursor: pointer;
+
+    @media #{$lg} {
+      padding: 46px 15px;
+      margin-right: 60px;
+    }
+
+    @media #{$sm} {
+      width: 300px;
+      height: 140px;
+      margin: 0 23px;
+    }
+
+    @media #{$xs} {
+      width: 330px;
+      height: 170px;
+      margin: 0 4px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover {
+      box-shadow: 0px 3px 10px rgba(35, 35, 35, 0.15);
+    }
+  }
+
+  &__third-icon {
+    margin-right: 30px;
+
+    @media #{$sm} {
+      width: 50px;
+      flex-shrink: 0;
+
+    }
+
+    @media #{$xs} {
+      width: 60px;
+    }
+  }
+
+  &__third-text {
+    font-family: $GothProB;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 16px;
+      line-height: 20px;
+    }
+
+    @media #{$xs} {
+      font-size: 18px;
+      line-height: 22px;
+    }
+  }
+}

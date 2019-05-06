@@ -1,0 +1,241 @@
+@import "../variables";
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 41px 0 33px;
+
+  @media #{$sm} {
+    padding: 22px 0;
+  }
+
+  @media #{$xs} {
+    padding: 25px 0;
+    display: block;
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+
+  &__email-link {
+    color: $redesign-index-orange;
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 17px;
+  }
+
+  &__subscribe-link {
+    display: block;
+    margin-left: 11px;
+    color: $redesign-index-black-05;
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 17px;
+    text-decoration: underline;
+    padding-left: 25px;
+    position: relative;
+    transition: 0.3s;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 2px;
+      left: 0;
+      width: 13.14px;
+      height: 10px;
+      background: url('#{$assets-path}/img/footer_mail.svg');
+      background-size: cover;
+    }
+  }
+
+  &__messengers {
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+    @media #{$xs} {
+      justify-content: center;
+    }
+  }
+
+  &__mes-link {
+    color: $redesign-index-black;
+    transition: 0.3s;
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 17px;
+    display: block;
+    margin: 0 20.5px;
+    position: relative;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+      margin: 0 18px;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 17px;
+      margin: 0 20px;
+    }
+
+    &:first-child {
+      @media #{$sm} {
+        margin-left: 0;
+      }
+
+      @media #{$xs} {
+        margin-left: 20px;
+      }
+    }
+
+    &:hover {
+      color: $redesign-index-orange;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      left: -20.5px;
+      top: -7px;
+      width: 1px;
+      height: 30px;
+      background: $redesign-index-black;
+
+      @media #{$sm} {
+        height: 26px;
+      }
+    }
+
+    &:first-child {
+      &:before {
+        display: none;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    align-items: center;
+
+    @media #{$xs} {
+      margin-top: 20px;
+      justify-content: center;
+    }
+  }
+
+  &__soc-link {
+    display: block;
+    margin: 0 9px;
+
+    @media #{$sm} {
+      margin: 3px;
+
+      svg {
+        height: 12px;
+      }
+    }
+
+    @media #{$xs} {
+      margin: 0 9px;
+
+      svg {
+        height: 15px;
+      }
+    }
+
+    &:nth-child(2), &:nth-child(4) {
+      @media #{$sm} {
+        svg {
+          height: 15px;
+        }
+      }
+
+      @media #{$xs} {
+        svg {
+          height: 20px;
+        }
+      }
+    }
+
+    svg:hover {
+      .footer-top__soc-icon {
+        fill: $redesign-index-orange;
+      }
+    }
+  }
+
+  &__soc-icon {
+    fill: $redesign-index-black;
+    transition: 0.3s;
+  }
+
+  &__country {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 15px;
+    color: $redesign-index-black;
+    padding-left: 19px;
+    position: relative;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 13px;
+      padding-left: 14px;
+    }
+
+    @media #{$xs} {
+      font-size: 14px;
+      line-height: 15px;
+      padding-left: 19px;
+    }
+
+    &:before {
+      position: absolute;
+      content: '';
+      width: 11.04px;
+      height: 15px;
+      background: url('#{$assets-path}/img/footer_country.svg') center;
+      background-size: cover;
+      left: 0;
+      top: -2px;
+
+      @media #{$sm} {
+        width: 9.57px;
+        height: 13px;
+        top: -1px;
+      }
+
+      @media #{$xs} {
+        width: 11.04px;
+        height: 15px;
+        top: -2px;
+      }
+    }
+  }
+
+  &__current-country {
+    color: $redesign-index-black;
+    font-family: $GothProM;
+    text-decoration: underline;
+    display: inline-block;
+    margin-left: 5px;
+
+    @media #{$sm} {
+      margin-left: 0;
+    }
+
+    @media #{$xs} {
+      margin-left: 5px;
+    }
+  }
+}

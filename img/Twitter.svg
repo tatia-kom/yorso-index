@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Twitter">
+<rect width="20" height="20" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.025)"/>
+</pattern>
+
+<image id="image0" data-name="Twitter.png" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIDSURBVHgB7VerUgMxFD3LoOkXtD8AGCRF4aiqo65fgCwKiWolBnAoKluFrKE4MG0lppUo+gPlHjYdlp1kN9ndgMmZOZM2j83JTXJzLxAQEBDgFRE8YrPZ7EnREtZV1Uo4jaJohbKQj9dQAjK+J3wXfmh4nerbFN64fLwlnKAgOJlBWJITChW+qf+dIhM8uFpS+l9aiEuzp8bW09/bMcyz7cjzM9INNIjjYuwtEWMpbPA4SNmEpcAkDoRjyy3gBFaLSaCBeFG3cnmGsBSYvmWclNtOax7DjH0Uw5WIG+gaTAKHhnpaaKyEdmy3Pgd0O3emxl1dpQyYyuRTaM4EfoR+t0m/OeJzRKs3UDG0jlo5WB74kY9JU6AF26bGXUM9nSaFLeBf4DyrMeuS8PaewT8KCXzC32GW1agVyEsixT38YylzLbI6ZDnqvnAKv3jJ65AbbvFtleIcfi7LUV7olfnUKUdMcqWfqBZDm7jQxoKv+CfrETbBQhfVW69vG1Vbhfxqq6t6VWYi7tS2s1NOokIukk68SErAN7vtkpM4J03MHxA/ha6RjLM4wlqgEsbQvAl38LXoFsnmIo2QrWupKXI7k6mjKwYirI+C0EUza+EJyjtnvkIXZXNg4xYnkm5eCtttpRhG44+VJOewdzMUe4h4u/l7a1ke/LUS9iyi1ggICAj4hS/2GzhsoUFBJAAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+

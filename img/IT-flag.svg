@@ -1,0 +1,15 @@
+<svg width="15" height="10" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Italy">
+<rect width="17" height="17" transform="translate(-1 -3)" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.0208333)"/>
+</pattern>
+
+<image id="image0" data-name="Italy.png" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAC+klEQVR4nO2ZzW7TQBCAv7XdpJVSKlIhJLhV4oR64ATiGXgEkOAteAMehBtXLjwB6h3xDkjQhv7QxuvdGQ6xHTtN0mTtJlTkkyzbG8/uzM54d8aBDRs2bFgnBoiBbn6+Exwe7iX7+8/ig4OD1AD3X3/+cBLa2cdX7xsp8+PNu2DZt18+PUqAPUF5+fhpI0VC6b54HiQ3/HrE0a/LnQToqiointP0DwBaedBUrnXivg1kMKgMoGBuGEGVaO8eqHAKWwmAqODE48SXihYY6oorLeNcrle9Z2NM2Xbt2jlUBIDcAMWKIxNf13iW5obWLNHMTW+fc20yDzJqLT2QiSOT6Z3dJprZMJk8WhIAr4p1DuvXYIDNAmQseKEDpvRA6jOsX76zpqgN8EBqURGebNEdeUB8bsA6PJAuL5Nugfd8zxiOPeAsqV9+NpqiaYAHtlJUPJ1eJ8rfAWHoLek6QigN8EAcgxfshZU8hISrzJK61RtAiAFRBHm4lx64EstQVm+ADJc3wGBQX9kHvAppZu/MKoQx9X1ARDi3l60qtihBq5BNwURAboBTwa1hF4awVQjAJAlQSSUGw4v2tFqCWjZaY37CFff7QOEBEURbzzMXQmXWuPP1UV/NRkXQ9hPlxQicOKknc47YRGU9sFICDDBJXPeAE0FQBC1rAFP0ayqF0vhntK2aQGR22TdZlxTjSVQWQuVOjFaqIq3oVjRVlNVKe2NUr/c1rZqZeEZrO7H3EOcGzKvA2i6IIewdUEWKEOr3e4moompmz+yMWWiDyVp4UaSoiXd39ztePFEcr2clCjXAjxac6Pz42KrKKDqUcUyqVg4mDp0eu6ui8pUiObm4cNsyCnCdGSthm81CBHqg+KwSFTc3fU/6lzDGIFo1YE1pRBMKnUsDzK2skbdE5R0YG3C3YqhMPpMeRIU1vc7OynWJer1G8sl2FwE4+30a1MFgZj6/oPzZWRNxb4CHwCHwoJEmq+cn8M0w+ntpNz/fJVLgfN1KbNiw4X/nL9Tz3GSWmCNDAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+

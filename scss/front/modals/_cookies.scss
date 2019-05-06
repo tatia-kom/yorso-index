@@ -1,0 +1,86 @@
+@import "../variables";
+
+.cookies-wrapp {
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  .cookies-contant {
+    background: $brand-white;
+    border-top: 1px solid #7C7E82;
+    .relative-wr {
+      position: relative;
+    }
+    .m-w-cookes {
+      max-width: 635px;
+      margin: 0 auto;
+      padding: 18px 0;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @media #{$xs} {
+        display: block;
+        padding: 8px 0;
+      }
+      .policy {
+        margin-bottom: 0;
+        font-family: OpenSansRegular, sans-serif;
+        background-image: url('#{$assets-path}/img/guard.svg');
+        background-repeat: no-repeat;
+        background-position: center left;
+        padding: 3px 10px 3px 32px;
+        @media #{$xs} {
+          margin-bottom: 10px;
+          padding-right: 15px;
+          padding-left: 36px;
+        }
+      }
+      .butt-groupe {
+        display: flex;
+        align-items: center;
+
+      }
+      .close-cookie {
+        position: absolute;
+        right: 0;
+        @media #{$xs} {
+          &.close-x {
+            top: 18px;
+            transform: none;
+          }
+        }
+      }
+      .later {
+        background: transparent;
+        display: block;
+        border: 1px solid rgba(124, 126, 130, 0.4);
+        outline: none;
+        border-radius: 2px;
+        color: #1A93C7;
+        font-size: 13px;
+        padding: 6px 14px;
+        font-family: OpenSansRegular, sans-serif;
+        margin-right: 16px;
+        @media #{$xs} {
+          padding: 2px 14px;
+        }
+      }
+      .read {
+        font-family: OpenSansSemiBold, sans-serif;
+        font-size: 13px;
+        padding: 6px 14px;
+        color: $brand-white;
+        background: #FC6526;
+        border: none;
+        border-radius: 2px;
+        outline: none;
+        display: block;
+        @media #{$xs} {
+          padding: 2px 14px;
+        }
+      }
+    }
+  }
+
+}

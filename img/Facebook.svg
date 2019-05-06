@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Facebook">
+<rect width="20" height="20" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.025)"/>
+</pattern>
+
+<image id="image0" data-name="Facebook.png" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAD8SURBVHgB7dexDcIwEAXQb0QNE2QDaGhZhAmgYwJKNqBiAigZAiYgE5AJYIFwFkSggKNc7mwo7klWZHDxleR8DmDMbzkoKstySpc5jTGN7MuSnXNuCYY+lFC4DV1mUNaDAgq3RoRwnjgghfOPcoFINO5glDtX0XgHRw3/bWnkb/MLmDQCDgO/n6hiVxBSKZKYLKBUp07y3JSrTuG7xiCwtKjNj6k6iW9pWYt1bdY0Sv2Ib2BKHfAKptQBC+b6zu/gGa+u4DtJcLOuzXMwic+DVNEHPIqmrqCKnUDINmopCyhlAaUsoJQFlLKAUhZQSuPDfY/Pc5/HPj0b84/uQe8o1J+eIpoAAAAASUVORK5CYII="/>
+</defs>
+</svg>
+

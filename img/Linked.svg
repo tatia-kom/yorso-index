@@ -1,0 +1,15 @@
+<svg width="20" height="20" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Linked">
+<rect width="20" height="20" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.025)"/>
+</pattern>
+
+<image id="image0" data-name="Linked.png" width="40" height="40" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAFgSURBVHgB7Zg9TsNAEIVnI2p8gtyAitYngCpluACuUiYNN4CSjgvgG1BSuYQKLpCUVOYC5o2yEdZmxvnZrOVI80lPjmcm1vN6/2wiwzA6cVqiaZoch3sog1bQo3NuRUMA5qbQT6BPKKOeGSnxQoiNoRvqGc2g1lKX1DOawaUSf6MhgL42hj6CPljQ0OCR7AdM74/WOBWOEuO7xx105UM1VEFf+0z8TrkoDwhpzitx0bJV90zr+THkAXXfyM/xe0E6vDo9deTpQonz3eZCvArOc8VgBnPv9N9qGgvU3eI4gdFaKhhRGrjVdpnbwHVzLZnKYH5gfcFzr5RIZXADP7bSq9pRO5WCKQ2yqWv0rZnXBOczWpuWEFs9lcGlN/XbDvoZ4EX5j9hnUxksO3KvSjyT9pupDB67895a81MPkmjMYCxmMBYzGIsZjMUMxqK9k/CaKH3+qNs7FG2TGdYZxjnzB+E0gazzkwqRAAAAAElFTkSuQmCC"/>
+</defs>
+</svg>
+

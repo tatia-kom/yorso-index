@@ -1,0 +1,104 @@
+@import "../variables";
+
+.footer-credits {
+  width: 65%;
+  padding: 15px 0;
+
+  @media #{$sm} {
+    width: 33%;
+    flex-shrink: 0;
+    padding: 7px 0;
+  }
+
+  @media #{$xs} {
+    display: none;
+  }
+
+  &__region {
+    margin-left: 58.5px;
+    display: flex;
+    justify-content: space-between;
+
+    @media #{$sm} {
+      margin-left: 87.5px;
+    }
+  }
+
+  &__title {
+    font-size: 14px;
+    font-family: $GothProB;
+    line-height: 17px;
+    color: $redesign-index-black;
+    margin: 0 0 15px;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 17px;
+      margin-bottom: 10px;
+    }
+  }
+
+  &__phones-block {
+    margin-bottom: 20px;
+    width: 22%;
+    flex-shrink: 0;
+
+    @media #{$lg} {
+      width: 28%;
+    }
+
+    @media #{$sm} {
+      width: 100%;
+    }
+
+    &--no_margin {
+      @media #{$sm} {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  &__phone {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 17px;
+    color: $redesign-index-black;
+    display: inline-block;
+    border-bottom: 0.5px solid $redesign-index-black;
+
+    &:hover {
+      border-bottom-color: $redesign-index-orange;
+    }
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 15px;
+    }
+  }
+
+  &__details {
+    width: 25%;
+    flex-shrink: 0;
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    font-family: $GothProL;
+    line-height: 22px;
+    color: $redesign-index-black;
+  }
+
+  &__address {
+    margin-top: 32px;
+    width: 38%;
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+}
+

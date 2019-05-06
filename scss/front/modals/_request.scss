@@ -1,0 +1,158 @@
+@import "../variables";
+
+.sendRequest-form {
+  .email-wr {
+    padding-bottom: 24px;
+    position: relative;
+    p {
+      position: absolute;
+      bottom: 6px;
+    }
+  }
+  p {
+    font-size: 11px;
+    font-family: OpenSansRegular, sans-serif;
+    color: #F76A57;
+    display: none;
+    &.arr {
+      display: block;
+    }
+  }
+  input {
+    width: 100%;
+    border: 1px solid $brand-gray;
+    display: block;
+    font-family: OpenSansRegular, sans-serif;
+    padding: 7px 16px;
+    outline: none;
+
+    border-radius: 2px;
+    font-size: 14px;
+    &::-webkit-input-placeholder {
+      color: #ABACB0;
+    }
+    &::-moz-placeholder {
+      color: #ABACB0;
+    }
+    &:-moz-placeholder {
+      color: #ABACB0;
+    }
+    &:-ms-input-placeholder {
+      color: #ABACB0;
+    }
+    &.arr {
+      border-color: #F76A57;
+    }
+  }
+  textarea {
+    width: 100%;
+    border: 1px solid $brand-gray;
+    display: block;
+    font-family: OpenSansRegular, sans-serif;
+    padding: 7px 16px;
+    outline: none;
+    resize: none;
+    height: 135px;
+    border-radius: 2px;
+    font-size: 14px;
+    &.arr {
+      border-color: #F76A57;
+    }
+    &::-webkit-input-placeholder {
+      color: #ABACB0;
+    }
+    &::-moz-placeholder {
+      color: #ABACB0;
+    }
+    &:-moz-placeholder {
+      color: #ABACB0;
+    }
+    &:-ms-input-placeholder {
+      color: #ABACB0;
+    }
+  }
+
+  .buttons-wrapp {
+    display: flex;
+    padding-top: 24px;
+    @media #{$xs} {
+      display: block;
+    }
+    .for-padd {
+      width: 180px;
+      flex-shrink: 0;
+      padding-right: 12px;
+      @media #{$xs} {
+        width: 100%;
+        padding-right: 0;
+        margin-bottom: 10px;
+      }
+      button {
+        display: block;
+        width: 100%;
+        border: none;
+        font-size: 14px;
+        font-family: OpenSansBold, sans-serif;
+        border-radius: 3px;
+        background: $brand-orange;
+        color: $brand-white;
+        padding: 12px 0;
+        outline: none;
+        transition: 0.3s;
+        &:hover {
+          background: $brand-orange-hover;
+        }
+      }
+    }
+    .get-cons {
+      display: none;
+      width: 100%;
+      border: 1px solid #ABACB0;
+      font-size: 13px;
+      font-family: OpenSansBold, sans-serif;
+      text-align: center;
+      color: $brand-orange;
+      padding: 12px 0;
+      border-radius: 3px;
+      &.show {
+        display: block;
+      }
+
+    }
+  }
+}
+
+.request-prices__header {
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.request-tel,
+.request-comment {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.request-tel__input,
+.request-comment__textarea {
+  width: 100%;
+  margin: 5px auto 0;
+}
+
+.request-tel__label:after {
+  content: ' *';
+  color: red;
+}
+
+.request-comment__textarea {
+  display: block;
+  resize: none;
+}
+
+.request-prices__submit {
+  margin-top: 20px;
+}
+
+.request-prices__submit .fa-envelope-o {
+  margin-right: 6px;
+}

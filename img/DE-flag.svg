@@ -1,0 +1,15 @@
+<svg width="15" height="10" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Germany">
+<rect width="17" height="17" transform="translate(-1 -3)" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.0208333)"/>
+</pattern>
+
+<image id="image0" data-name="Germany.png" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAACxklEQVR4nO2ZzW4TMRCAv9mfpEipKA0IwYFDJQ4ceuAJ+gJ9V94AqRfUO+IpoCVVqybreDwc9ie76abNBontonyH7I4z9sxo7IntwJ49e/b0iQAxMC6eg+D09GUynX6OT05OMgFenZ+fX/ft1C4sL7++T4CXIQTOzs769qcTFxcXXP66f5EA4xACqspsNgPAzCpFEcknmuXtkQj2YLhCocDMEImqtlyWhuqqhzT1IqHFQKVnZhwdHRGCcQNpkncMeO/x3ucDFR+lTazoD2gpFkZMDCm/zE0UsmK1jlJImCACVh+/6IetGtZt5/q5oKpYCAAkAEEDzjmWy2Vb6M8O5xzBFCgC8Ko453DO9erYtjjn8L4WgJkNLgAzYwSSAKgqWZY9HkBtHTzatrl5o962+iXZIkNV+ZgyrgKYz+csFosOw/RHmqaoKj+WLBoZyLKsb9+2YjQaoaqMJqMoX8TeDyoDcRzjvcfduZAAfAkHxHPDsqhv37ZCYtBwwAeKKoRX7H6BzYcxhUBA62XUK+F+gWXZqhxYU7+S28pFvYy0lZb19zVfHthqG7v2FAPztV9iC4rd3myI9vlhbgGST/fVFBrINqJE0hQoAwhKuB7WkSB+PQVqa8BC6x722WLa2I0qWOjVoa6ERhVSRaIYK84DW9NWedq+W++zqcJtazZJsAcBQH5q6IJteG+Tu+o9RT2AUugcQMODx7aqXfebT9toZODdNyVNNp1Fn2KTY7KFzo42BJZe4RMkx8eTxELInd8pA/1QnYkPD6ejEObstJp6wwhF2Y9ur65cfo3yt2n+l0h19ZNc3915sxH5zeJQMgBW3EpEQJ4OGVAGRFZTCJo3cUOh9LkWwIAyUFsDgw2gnELJBKJqIxpN+vNpR5KDMQHg9+y2b192QQV4C5wCb3p2pis/ge9C/vfSYfEcEhkwyGmzZ8+e/4k/c7KJu8dGquIAAAAASUVORK5CYII="/>
+</defs>
+</svg>
+

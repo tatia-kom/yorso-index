@@ -1,0 +1,104 @@
+@import "../variables";
+
+.catalog-feedback {
+  background: $brand-icon-default;
+  overflow: hidden;
+  padding-bottom: 32px;
+
+  &__title {
+    font-family: $OPS-R, sans-serif;
+    color: $brand-white;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 34px;
+    margin: 16px 0 8px;
+
+    &--request {
+      color: $brand-orange;
+      max-width: 347px;
+      font-family: $OPS-B, sans-serif;
+      font-size: 24px;
+      font-weight: 600;
+      line-height: 33px;
+      margin: 32px auto;
+    }
+  }
+
+  &__subtitle {
+    font-family: $OPS-R, sans-serif;
+    color: $brand-white;
+    font-size: 16px;
+    line-height: 22px;
+    margin-bottom: 16px;
+  }
+
+  &__field {
+    max-width: 392px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: $brand-white;
+    box-shadow: none;
+
+    &::placeholder {
+      color: $brand-white;
+    }
+
+    &:focus {
+      border: 1px solid rgba(255, 255, 255, 0.4);
+      box-shadow: none;
+    }
+
+    &--request {
+      max-width: 347px;
+      height: 40px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 4px;
+      margin-top: 12px;
+      margin-bottom: 12px;
+      border: 1px solid rgba(49, 54, 94, 0.15);
+      color: rgba(124, 126, 130, 0.85);
+      box-shadow: none;
+
+      &::placeholder {
+        color: rgba(124, 126, 130, 0.85);
+      }
+
+      &:focus {
+        border: 1px solid rgba(49, 54, 94, 0.15);
+        box-shadow: none;
+      }
+    }
+  }
+
+  &__header {
+    font-family: $OPS-SB, sans-serif;
+    color: $brand-icon-default;
+    font-size: 14px;
+    line-height: 19px;
+    padding-bottom: 16px;
+    padding-top: 16px;
+    border-bottom: 1px solid $brand-gray;
+  }
+
+  &--request {
+    background-color: $brand-white;
+  }
+}
+
+.catalog-request__btn {
+  width: 100%;
+  max-width: 194px;
+  font-size: 16px;
+  line-height: 22px;
+  padding: 8px 0;
+  margin: 20px auto 0;
+  position: static;
+  border-radius: 4px;
+}

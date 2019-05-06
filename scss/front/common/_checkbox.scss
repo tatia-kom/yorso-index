@@ -1,0 +1,66 @@
+@import "../variables";
+
+.one-checkbox {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: relative;
+  overflow: hidden;
+  padding-top: 12px;
+  margin-bottom: 5px;
+  .check-style {
+    .checkbox {
+      width: 0;
+      height: 0;
+      display: block;
+      position: absolute;
+      left: -5000px;
+      top: 0;
+    }
+    label {
+      display: block;
+      width: 12px;
+      height: 12px;
+      border-radius: 2px;
+      border: 1px solid $brand-orange;
+      background: $brand-white;
+      position: relative;
+      margin-bottom: 0;
+      margin-top: 2px;
+      cursor: pointer;
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        background-repeat: no-repeat;
+        width: 12px;
+        height: 12px;
+        background-image: url('#{$assets-path}/img/checked.svg');
+        opacity: 0;
+      }
+    }
+    .checkbox:checked + label {
+      background-color: $brand-orange;
+      &:before {
+        opacity: 1;
+      }
+    }
+  }
+  p {
+    padding-left: 15px;
+    font-family: OpenSansRegular, sans-serif;
+
+    color: #ABACB0;
+    font-size: 12px;
+    display: block;
+    a {
+      color: #ABACB0;
+      white-space: nowrap;
+      text-decoration: underline;
+    }
+
+  }
+
+}

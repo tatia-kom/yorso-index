@@ -1,0 +1,83 @@
+@import "../variables";
+
+.top-languages {
+  &__dropdown {
+    right: -34px;
+    margin-top: 30px;
+
+    @media #{$lg} {
+      right: -25px;
+    }
+
+    @media #{$sm} {
+      margin-top: 26px;
+      right: -8px;
+    }
+
+    @media #{$xs} {
+      margin-top: 17px;
+    }
+
+    &:before {
+      right: 25px;
+
+      @media #{$lg} {
+        right: 13px;
+      }
+
+      @media #{$sm} {
+        right: 5px;
+      }
+    }
+  }
+
+  &__head {
+    display: flex;
+    align-items: center;
+    padding: 14px 23px;
+    position: relative;
+
+    @media #{$sm} {
+      padding: 14px 18px;
+    }
+
+    &:after {
+      position: absolute;
+      content: '';
+      top: calc(50% - 4.5px);
+      right: 23px;
+      display: block;
+      width: 12px;
+      height: 9px;
+      background: url('#{$assets-path}/img/language_check.svg') no-repeat center;
+      background-size: cover;
+    }
+  }
+
+  &__icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media #{$sm} {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &__text {
+    margin-left: 17px;
+
+    @media #{$sm} {
+      margin-left: 22px;
+    }
+
+    &--bold {
+      font-family: $GothProB;
+    }
+  }
+}

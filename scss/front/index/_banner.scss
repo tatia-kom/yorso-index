@@ -1,0 +1,148 @@
+@import "../variables";
+
+.banner {
+  min-height: 700px;
+  background: url('#{$assets-path}/img/banner.png');
+  background-size: cover;
+  background-position: center;
+  padding-top: 20px;
+  padding-bottom: 100px;
+
+  @media #{$sm} {
+    min-height: 450px;
+    padding-top: 10px;
+  }
+
+  @media #{$xs} {
+    min-height: 540px;
+    padding-top: 8px;
+    position: relative;
+  }
+
+  &:before {
+    @media #{$xs} {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.4) 100%);
+    }
+  }
+
+  &__form {
+    display: flex;
+    box-shadow: 0px 2px 4px rgba(35, 35, 35, 0.1), 0px -2px 4px rgba(35, 35, 35, 0.05);
+  }
+
+  &__search-button {
+    width: 100px;
+    height: 50px;
+    flex-shrink: 0;
+    background: $redesign-index-grey;
+    border: 1px solid #E8E4E4;
+    border-radius: 5px;
+    z-index: 1;
+    outline: none;
+    transition: 0.3s;
+
+    @media #{$sm} {
+      width: 70px;
+      height: 40px;
+    }
+
+    @media #{$xs} {
+      height: 50px;
+    }
+
+    &:hover {
+      background: $redesign-index-orange;
+      border-color: $redesign-index-orange;
+
+      img {
+        filter: invert(100%) contrast(200%);
+        -webkit-filter: invert(100%) contrast(200%);
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 99px;
+    max-width: 506px;
+
+    @media #{$sm} {
+      margin-top: 45px;
+      max-width: 352px;
+    }
+
+    @media #{$xs} {
+      margin-top: 65px;
+    }
+  }
+
+  &__title {
+    font-family: $GothProB;
+    font-size: 50px;
+    line-height: 62px;
+    margin: 0;
+    color: $redesign-index-black;
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__description {
+    margin: 76px 0 0;
+    font-family: $GothPro;
+    font-size: 24px;
+    line-height: 34px;
+    color: $redesign-index-black;
+
+    @media #{$sm} {
+      margin: 30px 0 0;
+      font-size: 18px;
+      line-height: 26px;
+    }
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 23px;
+      margin-top: 45px 0 0;
+    }
+  }
+
+  &__buttons {
+    margin-top: 76px;
+    display: flex;
+
+    @media #{$sm} {
+      margin-top: 40px;
+    }
+
+    @media #{$xs} {
+      margin-top: 50px;
+      justify-content: space-between;
+    }
+  }
+
+  &__buy-button {
+    margin-right: 54px;
+
+    @media #{$sm} {
+      margin-right: 25px;
+    }
+
+    @media #{$xs} {
+      margin: 0;
+    }
+  }
+}

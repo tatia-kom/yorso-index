@@ -1,0 +1,17 @@
+<svg width="24" height="24" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="Group 3">
+<g id="Ellipse 2.1">
+<circle cx="12" cy="12" r="12" fill="white"/>
+<circle cx="12" cy="12" r="11.5" stroke="#F77640"/>
+</g>
+<g id="Rectangle 15">
+<rect width="2" height="11" transform="translate(11 9)" fill="#F77640"/>
+</g>
+<g id="Ellipse 3">
+<circle cx="1.5" cy="1.5" r="1.5" transform="translate(10.5 4.5)" fill="#F77640"/>
+</g>
+</g>
+</g>
+</svg>
+

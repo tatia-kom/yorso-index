@@ -1,0 +1,144 @@
+@import "../variables";
+
+.notifications-list {
+  max-width: 309px;
+  width: 309px;
+  left: -108px;
+
+  @media #{$sm} {
+    max-width: 203px;
+    width: 203px;
+    left: -85px;
+  }
+
+  @media #{$xs} {
+    left: -79px;
+  }
+
+  &:before {
+    left: calc(50% - 25px);
+
+    @media #{$sm} {
+      left: calc(50% - 15px);
+    }
+  }
+
+  &__head {
+    line-height: 15px;
+    font-family: $GothProL;
+  }
+
+  &__important {
+    font-family: $GothProB;
+  }
+
+  &__item {
+    position: relative;
+
+    &:hover {
+      background: $brand-white;
+
+      .notifications-list__text {
+        color: $redesign-index-black!important;
+
+        &:before {
+          background: $redesign-index-blue;
+        }
+      }
+      .notifications-list__link {
+        color: $redesign-index-blue!important;
+      }
+      .notifications-list__date {
+        color: $redesign-index-blue!important;
+      }
+    }
+
+    &--unactive {
+      &:hover {
+        .notifications-list__text {
+          color: $redesign-index-black!important;
+
+          &:before {
+            background: $redesign-index-black;
+          }
+        }
+        .notifications-list__link {
+          color: $redesign-index-black!important;
+        }
+        .notifications-list__date {
+          color: $redesign-index-black!important;
+        }
+      }
+    }
+  }
+
+  &__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 19px 0;
+    width: 100%;
+  }
+
+  &__words {
+    float: left;
+  }
+
+  &__text {
+    line-height: 17px;
+    margin: 0;
+    width: 160px;
+    position: relative;
+    padding-left: 33px;
+
+    @media #{$sm} {
+      padding-left: 25px;
+      width: 100%;
+    }
+
+    &:before {
+      content: '';
+      position: absolute;
+      width: 11px;
+      height: 11px;
+      display: block;
+      border-radius: 50%;
+      background: $redesign-index-orange;
+      top: calc(50% - 5.5px);
+      left: 0;
+      transition: 0.3s;
+    }
+
+    &--grey {
+      color: $redesign-index-black-05;
+
+      &:before {
+        background: $redesign-index-grey;
+      }
+    }
+  }
+
+  &__link {
+    color: $redesign-index-orange;
+    font-family: $GothProB;
+    text-decoration: underline;
+
+    &--grey {
+      color: $redesign-index-black-05;
+    }
+  }
+
+  &__date {
+    width: 65px;
+    flex-shrink: 0;
+    font-family: $GothProL;
+    font-size: 11px;
+    line-height: normal;
+    color: $redesign-index-black-05;
+    transition: 0.3s;
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+}

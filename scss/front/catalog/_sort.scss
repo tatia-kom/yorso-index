@@ -1,0 +1,206 @@
+@import "../variables";
+
+.sort-panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 48px;
+  @media #{$lg} {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 35px;
+  }
+  @media #{$xs} {
+    display: none;
+  }
+
+  &__result {
+    font-size: 16px;
+    color: $brand-black;
+    font-family: $OPS-R, sans-serif;
+    @media #{$lg} {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__variant {
+    display: flex;
+    align-items: center;
+    @media #{$lg} {
+      width: 100%;
+    }
+    @media #{$sm} {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    font-family: $OPS-R, sans-serif;
+    font-size: 13px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    margin-left: 32px;
+    @media #{$lg} {
+      margin-left: 0;
+      margin-right: 32px;
+    }
+    @media #{$sm} {
+      margin: 0;
+      font-size: 12px;
+    }
+
+    &__label {
+      padding-left: 20px;
+      position: relative;
+      font-weight: 400;
+      cursor: pointer;
+      margin: 0;
+      color: $brand-black;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 3px;
+        width: 12px;
+        height: 12px;
+        background: url('#{$assets-path}/img/checkbox.svg') center no-repeat;
+      }
+    }
+
+    input[type="checkbox"]:checked + .sort-panel__item__label {
+      color: $brand-orange-hover;
+      &:before {
+        background: url('#{$assets-path}/img/checkbox-checked.svg') center no-repeat;
+      }
+    }
+
+    &:hover {
+      label {
+        color: $brand-orange-hover;
+      }
+    }
+
+    &--weight {
+
+      &.active {
+        color: $brand-orange-hover;
+
+        .icon-sort-weight {
+          opacity: 1;
+        }
+      }
+
+      &.max-min {
+
+        .icon-sort-weight {
+
+          .line-top {
+            width: 10px;
+          }
+
+          .line-middle {
+            width: 7px;
+          }
+
+          .line-bottom {
+            width: 4px;
+          }
+        }
+      }
+    }
+
+    .icon-sort-weight {
+      display: inline-block;
+      width: 11px;
+      margin-left: 4px;
+      opacity: 0;
+
+      .line {
+        display: block;
+        height: 2px;
+        background: $brand-orange;
+        margin-bottom: 1px;
+        transition: 0.3s ease-in-out;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .line-top {
+        width: 4px;
+      }
+
+      .line-middle {
+        width: 7px;
+      }
+
+      .line-bottom {
+        width: 10px;
+      }
+    }
+
+    &--limited {
+
+    }
+
+  }
+
+  &__view-toggle {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+    @media #{$lg} {
+      flex: 1;
+      justify-content: flex-end;
+    }
+    @media #{$sm} {
+      margin-left: 0;
+      flex: 0;
+    }
+  }
+
+  &__toggle-item {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: $brand-gray;
+    margin-left: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &.active {
+      background: $brand-orange;
+
+      .icon-vertical >div {
+        border-color: $brand-white;
+        background: $brand-white;
+      }
+
+      .icon-horizontal >div {
+        border-color: $brand-white;
+        background: $brand-white;
+      }
+
+      &:hover {
+        background: $brand-orange;
+      }
+    }
+
+    &:hover {
+      background: $brand-gray-hover;
+    }
+
+    @media #{$sm} {
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}

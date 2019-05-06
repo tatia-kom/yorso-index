@@ -1,0 +1,55 @@
+@import "../variables";
+
+.clients {
+  margin-top: 65px;
+
+  @media #{$sm} {
+    margin-top: 60px;
+  }
+
+  @media #{$xs} {
+    margin-top: 52px;
+  }
+
+  &__flex {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    @media #{$sm} {
+      margin-top: 60px;
+      width: calc(100% + 25px);
+      transform: translateX(-12.5px);
+    }
+
+    @media #{$xs} {
+      margin-top: 36px;
+      width: calc(100% + 30px);
+      transform: translateX(-15px);
+      position: relative;
+      padding-bottom: 40px;
+    }
+  }
+
+  &__item {
+    background: $brand-white;
+    padding: 54px 15px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-right: 34px;
+
+    @media #{$sm} {
+      height: 148px;
+      padding: 0 15px;
+      margin: 0 12.5px;
+    }
+
+    @media #{$xs} {
+      height: 200px;
+      margin: 0 8.5px;
+    }
+  }
+}

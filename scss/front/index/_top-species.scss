@@ -1,0 +1,145 @@
+.top-species {
+  margin: 65px 0 0;
+
+  &__flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 65px;
+
+    @media #{$sm} {
+      margin-top: 50px;
+    }
+  }
+
+  &__item {
+    width: calc((100% - 80px) / 5);
+    margin-right: 20px;
+    margin-bottom: 35px;
+    outline: none;
+
+    @media #{$sm} {
+      margin: 0 6px;
+    }
+
+    &:nth-child(5n+5) {
+      margin-right: 0;
+
+      @media #{$sm} {
+        margin: 0 6px;
+      }
+    }
+  }
+
+  &__wrap {
+    border-radius: 5px;
+    overflow: hidden;
+
+    &:before {
+      padding-top: 100%;
+
+      @media #{$lg} {
+        padding-top: 122%;
+      }
+    }
+  }
+
+  &__block {
+
+    &:hover {
+      .top-species__list {
+        top: 0;
+      }
+    }
+
+    &--top {
+
+      &:before {
+        width: 100%;
+        height: 53px;
+        display: block;
+        content: '';
+        background: linear-gradient(180deg, rgba(35, 35, 35, 0.7) 0%, rgba(35, 35, 35, 0) 100%);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__star {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    top: 13px;
+    right: 15px;
+
+    @media #{$sm} {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__list {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0 30px;
+    background: rgba(35, 35, 35, 0.8);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    top: 100%;
+    left: 0;
+    position: absolute;
+    transition: 0.3s;
+
+    @media #{$lg} {
+      padding: 0 10px;
+    }
+  }
+
+  &__list-item {
+    margin: 5px 0;
+
+    @media #{$lg} {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    color: $brand-white;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $GothPro;
+    transition: 0.3s;
+
+    &:hover {
+      color: $redesign-index-orange;
+    }
+
+    @media #{$lg} {
+      font-size: 11px;
+      line-height: 14px;
+    }
+
+    @media #{$xs} {
+      font-size: 9px;
+    }
+  }
+
+  &__text {
+    display: block;
+    margin: 20px 0 0;
+    color: $redesign-index-black;
+    font-size: 18px;
+    line-height: 22px;
+    font-family: $GothPro;
+    text-align: center;
+
+    @media #{$xs} {
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

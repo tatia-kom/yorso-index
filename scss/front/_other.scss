@@ -1,0 +1,114 @@
+@import "variables";
+
+.edit-form-wrapper {
+  label {
+    font-weight: normal;
+  }
+}
+
+.similar-items-list a {
+  background: #F4F4F5;
+  padding: 10px;
+  display: inline-flex;
+  cursor: pointer;
+  transition: 0.3s;
+  word-break: break-all;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 550px;
+  &:hover {
+    background: #E4EBF5;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+  img {
+    width: 85px;
+    height: 85px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+  }
+  .similar-item-text {
+    width: 100%;
+    padding-left: 15px;
+    .similar-item-name {
+      display: block;
+      font-size: 13px;
+      font-family: OpenSansBold, sans-serif;
+      color: $brand-black;
+      margin-bottom: 5px;
+    }
+    p {
+      margin: 0;
+      font-size: 11px;
+      font-family: OpenSansRegular, sans-serif;
+      color: #929396;
+      span {
+        font-family: OpenSansSemiBold, sans-serif;
+      }
+    }
+  }
+}
+
+.timer-valid-till {
+  display: inline-flex;
+  border: 1px solid #ddd;
+  border-radius: 2px;
+  margin-bottom: 32px;
+  color: $brand-orange;
+  font-family: OpenSansRegular, sans-serif;
+  &_text {
+    padding: 4px 10px 2px 10px;
+    font-size: 13px;
+  }
+  &_time-left {
+    color: white;
+    background-color: #FC6526;
+    font-weight: bold;
+    padding: 2px 15px;
+    display: flex;
+    white-space: nowrap;
+  }
+}
+
+.ui-widget-content {
+  display: none;
+}
+
+.sec-regions .flex-flags li {
+  @media #{$lg} {
+    width: 20%;
+  }
+  @media #{$lg} {
+    width: 25%;
+  }
+}
+
+@media #{$lg} {
+  .back-call {
+    display: none;
+  }
+}
+
+@media #{$xs} {
+  #basket-new {
+    padding-bottom: 39px;
+  }
+
+  .new-line {
+    display: block;
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .new-line-thin {
+    font-family: $OPS-R, sans-serif;
+    font-weight: 400;
+  }
+
+  .right-side .lang-wrapp #lang-menu .lang-list .hidden-list:before,
+  .right-side #user-menu .hidden-list:before,
+  .notifications-wrapp .dropdown-notifications:before {
+    display: none;
+  }
+}

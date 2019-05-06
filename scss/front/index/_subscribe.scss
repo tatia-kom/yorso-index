@@ -1,0 +1,97 @@
+@import "../variables";
+
+.subscribe {
+  margin-top: 76px;
+  padding: 60px 0 75px;
+  background: url('#{$assets-path}/img/subscribe_bg.jpg') no-repeat center;
+  background-size: cover;
+
+  @media #{$sm} {
+    margin-top: 60px;
+    padding: 40px 0 55px;
+  }
+
+  @media #{$xs} {
+    margin-top: 53px;
+  }
+
+  &__wrap {
+    max-width: 817px;
+    margin: auto;
+
+    @media #{$sm} {
+      width: 568px;
+    }
+
+    @media #{$xs} {
+      width: 100%;
+    }
+  }
+
+  &__title {
+    color: $brand-white;
+    text-align: center;
+    font-size: 50px;
+    font-family: $GothProB;
+    line-height: 62px;
+
+    @media #{$sm} {
+      font-size: 36px;
+      line-height: 45px;
+    }
+
+    @media #{$xs} {
+      font-size: 30px;
+      line-height: 37px;
+    }
+  }
+
+  &__form {
+    display: flex;
+    margin-top: 45px;
+  }
+
+  &__button {
+    min-width: 120px;
+    height: 50px;
+    z-index: 1;
+    flex-shrink: 0;
+
+    @media #{$sm} {
+      min-width: 100px;
+      height: 40px;
+    }
+
+    @media #{$xs} {
+      min-width: 120px;
+      height: 50px;
+    }
+  }
+
+  &__note {
+    margin: 50px 0 0;
+    font-size: 14px;
+    line-height: 15px;
+    font-family: $GothPro;
+    color: $brand-white;
+    text-align: center;
+
+    @media #{$sm} {
+      font-size: 12px;
+      line-height: 13px;
+    }
+  }
+
+  &__police-link {
+    font-family: $GothProB;
+    color: $brand-white;
+    transition: 0.3s;
+    display: inline-block;
+    border-bottom: 1px solid $brand-white;
+
+    &:hover {
+      color: $redesign-index-orange;
+      border-bottom-color: $redesign-index-orange;
+    }
+  }
+}

@@ -1,0 +1,368 @@
+@import "../variables";
+
+.page-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100px;
+  background: $brand-white;
+  margin: 0;
+  box-shadow: 0px 2px 10px rgba(35, 35, 35, 0.1);
+  z-index: 2000;
+
+  @media #{$sm} {
+    height: 80px;
+  }
+
+  @media #{$xs} {
+    height: 60px;
+    padding-bottom: 0;
+    transition: 0.3s;
+  }
+
+  &__flex {
+    display: flex;
+    align-items: center;
+
+    @media #{$xs} {
+      flex-wrap: wrap;
+      width: calc(100% + 30px);
+      transform: translateX(-15px);
+    }
+  }
+
+  &__logo {
+    width: 149px;
+    flex-shrink: 0;
+
+    @media #{$sm} {
+      width: 93px;
+    }
+
+    @media #{$xs} {
+      order: 0;
+      margin-left: 52px;
+      width: 111px;
+      margin-right: auto;
+    }
+  }
+
+  &__mobile-menu {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    @media #{$xs} {
+      display: none;
+      order: 5;
+      background: $brand-white;
+    }
+  }
+
+  &__links {
+    display: flex;
+    margin-right: auto;
+
+    @media #{$xs} {
+      width: 100%;
+      flex-direction: column;
+      border-top: 1px solid $redesign-index-black;
+    }
+  }
+
+  &__link {
+    height: 100px;
+    font-size: 20px;
+    font-family: $GothProM;
+    line-height: 21px;
+    color: $redesign-index-black;
+    display: flex;
+    align-items: center;
+    padding: 0 26px;
+    transition: 0.3s;
+    border-bottom: 3px solid transparent;
+    margin-left: 35px;
+
+    &--active, &:hover {
+      color: $redesign-index-orange;
+      border-bottom-color: $redesign-index-orange;
+
+      .page-header__icon-link {
+        fill: $redesign-index-orange;
+      }
+    }
+
+    @media #{$lg} {
+      padding: 0 15px;
+      margin-left: 30px;
+    }
+
+    @media #{$sm} {
+      margin-left: 12px;
+      padding: 0 11px;
+      font-size: 14px;
+      height: 80px;
+    }
+
+    @media #{$xs} {
+      justify-content: center;
+      margin-left: 0;
+      font-size: 16px;
+      line-height: 17px;
+      border: 0;
+      height: 60px;
+    }
+
+    &--contact {
+      display: none;
+
+      @media #{$xs} {
+        display: flex;
+      }
+    }
+
+    svg {
+      @media #{$sm} {
+        height: 20px!important;
+      }
+
+      @media #{$xs} {
+        height: 24px!important;
+      }
+    }
+  }
+
+  &__icon-link {
+    fill: $redesign-index-black;
+    transition: 0.3s;
+  }
+
+  &__text-link {
+    padding-left: 25px;
+    padding-top: 5px;
+
+    @media #{$sm} {
+      padding-left: 11px;
+    }
+
+    @media #{$xs} {
+      padding-left: 19px;
+    }
+  }
+
+  &__languages {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 15px;
+    position: relative;
+
+    @media #{$sm} {
+      padding-left: 5px;
+    }
+
+    @media #{$xs} {
+      order: 4;
+      margin-right: 15px;
+      padding-left: 10px;
+    }
+  }
+
+  &__icon-language {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    @media #{$sm} {
+      width: 25px;
+      height: 25px;
+    }
+  }
+
+  &__one-icon {
+    padding: 0 37px 0 30px;
+    display: flex;
+    height: 100px;
+    position: relative;
+    cursor: pointer;
+
+    @media #{$lg} {
+      padding: 0 27px 0 20px;
+    }
+
+    @media #{$sm} {
+      height: 80px;
+      align-items: center;
+      padding: 0 30px 0 8px;
+    }
+
+    @media #{$xs} {
+      height: 60px;
+      padding: 0 6px 0 10px;
+    }
+
+    &:hover {
+      .svg-black {
+        fill: $redesign-index-blue;
+      }
+    }
+
+    svg {
+      margin: auto 0;
+
+      @media #{$sm} {
+        height: 20px;
+      }
+    }
+  }
+
+  &__basket {
+    @media #{$xs} {
+      order: 3;
+    }
+  }
+
+  &__notification {
+    position: absolute;
+    font-size: 12px;
+    font-family: $GothProB;
+    line-height: 13px;
+    color: $brand-white;
+    background: $redesign-index-orange;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    top: calc(50% - 22px);
+    left: 50%;
+
+    @media #{$sm} {
+      font-size: 8px;
+      width: 12px;
+      height: 12px;
+      top: calc(50% - 15px);
+      left: calc(50% - 6px);
+    }
+
+    @media #{$xs} {
+      top: calc(50% - 13px);
+      left: calc(50% + 5px);
+      width: 13px;
+      height: 13px;
+      font-size: 7px;
+      line-height: 13px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+
+    @media #{$sm} {
+      margin-left: 20px;
+    }
+
+    @media #{$xs} {
+      margin: 12px auto 27px;
+      justify-content: center;
+    }
+  }
+
+  &__button {
+    margin-right: 15px;
+
+    @media #{$sm} {
+      margin-right: 11px;
+    }
+
+    &:last-child {
+      @media #{$xs} {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__notifications {
+    position: relative;
+
+    @media #{$xs} {
+      order: 2;
+    }
+  }
+
+  &__profile {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    cursor: pointer;
+    padding: 0 24px;
+    position: relative;
+
+    @media #{$sm} {
+      height: 80px;
+      margin-left: auto;
+    }
+
+    @media #{$xs} {
+      order: 1;
+      height: 60px;
+      padding: 0;
+    }
+
+    &:hover {
+      .page-header__user {
+         color: $redesign-index-blue;
+      }
+
+      .svg-black {
+        fill: $redesign-index-blue;
+      }
+    }
+  }
+
+  &__arrow {
+    width: 18px;
+    height: 10px;
+    margin-top: -20px;
+
+    @media #{$sm} {
+      display: none;
+    }
+
+    &--reverse {
+      transform: scale(1, -1);
+      margin-top: 10px;
+    }
+  }
+
+  &__avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__user {
+    font-family: $GothPro;
+    font-size: 14px;
+    line-height: 17px;
+    margin-left: 16px;
+    padding-right: 34px;
+    transition: 0.3s;
+
+    @media #{$sm} {
+      display: none;
+    }
+  }
+
+  &__last-name {
+    font-family: $GothProB;
+    display: block;
+  }
+}

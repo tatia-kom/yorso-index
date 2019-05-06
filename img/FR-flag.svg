@@ -1,0 +1,15 @@
+<svg width="15" height="10" viewBox="0 0 15 10" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="Canvas" fill="none">
+<g id="France">
+<rect width="17" height="17" transform="translate(-1 -3)" fill="url(#pattern0)"/>
+</g>
+</g>
+<defs>
+<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0" transform="scale(0.0208333)"/>
+</pattern>
+
+<image id="image0" data-name="France.png" width="48" height="48" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAADT0lEQVR4nO2Zz24bNxDGf9yl7AS1mtZGUKBHA0VPPvTUS4G8QE59g94K9HX6FL3mEXLJvci999R/YimSSC1neiB3TUt24qUWEoTqEyRyqR3uDOebGVKCAw444IBdwgA1cJzavcDFxQt7dvZTfX5+7gzw7evXf16VTvbmzR8bKfPPr78Vy/7+9q/vLfBCRHj16seNFCnFV7/8XCT36e073v07e26BYxEIQbi5mQGgqt2NxphINI3jlTHow3MWIVxed31VxVSGzz1AVam/+RoV4SOMbBwUmibQNCHelD6MaaWIRgChvRzICglNq1lsogpx4dqFNCYal/qEBkQAsHESxfvAcinDaNUD6pu7i+RpAG372SK2a2Z86FhiAZogeN/g88m2Be/LZBJbEoV0ZwboctlfxntQ4QiMhRjAzn3BgNyd+diG0AIPqPdoEH4YcdwZMJ97Fov+q7EpZOH6C41GaAi8X7JIBijOBZwLQ+v3Ragr8MDIQQgcnRxVMYibHXrAZR5YyTprlG3HbY0GwU+9xDQq0QDn9oRCdYWm+tF5YDZbMp/vIAst3PqqP9ame9QYCHkdaIT5zONcEwtIurHzYLuVSP2s3mxuQEEMCAZCVgdElNvJYiCV+kFdfwqpc1BVQOeBwHK5/QwEICWVGDDWApkHrq4+DadVD+S70fvIiLoaD4A9O40txBgQGXKT3AP62HN1vZsPabYbDSHcOwNsFYXP1TyIQwhUlaFpolV5VlvFvQz0UKHpq0iB542tkeaeByLB2sX43JT66EUhtOQMslLIQnLHTmhUTKHcgOQOFX2QP+3pyKxQZhBzS5KHKBoShU5PT6xzgqhBURDQLG8Zo2hrgaQyPqCnurMu2ZGRtay5Pp7OxNV4fHYkIpgUA+lofdcqtF/Ew/4TAqWfCd2L9NaVdm3cQNNmocnlpRcR6jopm9me/biy9tDYDJGG+osYTEc9ezWdNtYKdW2yIF6d9QnFphSlQdxSKM6h8XeYfYExyKoB+wZJOmce2Kk+/WDu8tMeUygF8QlU02TNePxs67pU45ON5O2zY2TqYDL5WDTB9fVj+/mn4eb2dhPxYIDvgAvg5UaabB8fgL8N8e+lcWr3CQ6Y7FqJAw444P+O/wAOPQTSAdMQswAAAABJRU5ErkJggg=="/>
+</defs>
+</svg>
+
